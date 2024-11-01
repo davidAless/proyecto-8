@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - D. Master-Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">D. MASTER-CARD</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="categorias.html">Categorías</a>
+            <a href="productos.html">Productos</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="#">Ayuda</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carrito">
+            <h1>Tu Carrito de Compras</h1>
+            <table id="carrito-items">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los productos agregados aparecerán aquí dinámicamente -->
+                </tbody>
+            </table>
+
+            <div class="total-a-pagar">
+                <h3>Total a Pagar: $<span id="total-pagar">0</span></h3>
+            </div>
+
+            <button onclick="procesarCompra()">Pagar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 D. Master-Card - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

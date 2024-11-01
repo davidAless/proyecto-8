@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - D. Master-Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo D. Master-Card" width="50" height="50">
+            <span>D. MASTER-CARD</span>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="categorias.html">Categorías</a>
+            <a href="productos.html">Productos</a>
+            <a href="carrito.html">Carrito</a> <!-- Este enlace ahora dirige a carrito.html -->
+            <a href="#">Ayuda</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="productos">
+            <h1>Productos Disponibles</h1>
+
+            <div class="buscador">
+                <input type="text" id="buscar-producto" placeholder="Buscar producto...">
+            </div>
+
+            <div class="productos-lista">
+                <!-- Aquí se listarán los productos dinámicamente -->
+            </div>
+
+            <!-- Producto 1 -->
+            <div class="producto" id="producto-1">
+                <img src="pikachu.png" alt="Carta Pikachu" width="100">
+                <h3>Carta Pikachu</h3>
+                <p>Precio: $200</p>
+                <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto" id="producto-2">
+                <img src="charizard.png" alt="Carta Charizard" width="100">
+                <h3>Carta Charizard</h3>
+                <p>Precio: $500</p>
+                <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto" id="producto-3">
+                <img src="bulbasaur.png" alt="Carta Bulbasaur" width="100">
+                <h3>Carta Bulbasaur</h3>
+                <p>Precio: $300</p>
+                <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto" id="producto-4">
+                <img src="squirtle.png" alt="Carta Squirtle" width="100">
+                <h3>Carta Squirtle</h3>
+                <p>Precio: $250</p>
+                <button onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="producto" id="producto-5">
+                <img src="meowth.png" alt="Carta Meowth" width="100">
+                <h3>Carta Meowth</h3>
+                <p>Precio: $150</p>
+                <button onclick="agregarAlCarrito(5)">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="producto" id="producto-6">
+                <img src="jigglypuff.png" alt="Carta Jigglypuff" width="100">
+                <h3>Carta Jigglypuff</h3>
+                <p>Precio: $180</p>
+                <button onclick="agregarAlCarrito(6)">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="producto" id="producto-7">
+                <img src="eevee.png" alt="Carta Eevee" width="100">
+                <h3>Carta Eevee</h3>
+                <p>Precio: $220</p>
+                <button onclick="agregarAlCarrito(7)">Agregar al carrito</button>
+            </div>  
+
+            <!-- Producto 8 -->
+            <div class="producto" id="producto-8">
+                <img src="gengar.png" alt="Carta Gengar" width="100">
+                <h3>Carta Gengar</h3>
+                <p>Precio: $400</p>
+                <button onclick="agregarAlCarrito(8)">Agregar al carrito</button>
+             </div>
+
+            <!-- Producto 9 -->
+            <div class="producto" id="producto-9">
+                <img src="snorlax.png" alt="Carta Snorlax" width="100">
+                <h3>Carta Snorlax</h3>
+                <p>Precio: $350</p>
+                <button onclick="agregarAlCarrito(9)">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 10 -->
+            <div class="producto" id="producto-10">
+                <img src="mewtwo.png" alt="Carta Mewtwo" width="100">
+                <h3>Carta Mewtwo</h3>
+                <p>Precio: $600</p>
+                <button onclick="agregarAlCarrito(10)">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 11 -->
+            <div class="producto" id="producto-11">
+                <img src="gyarados.png" alt="Carta Gyarados" width="100">
+                <h3>Carta Gyarados</h3>
+                <p>Precio: $450</p>
+                <button onclick="agregarAlCarrito(11)">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 12 -->
+            <div class="producto" id="producto-12">
+                <img src="dragonite.png" alt="Carta Dragonite" width="100">
+                <h3>Carta Dragonite</h3>
+                <p>Precio: $480</p>
+                <button onclick="agregarAlCarrito(12)">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 13 -->
+            <div class="producto" id="producto-13">
+                <img src="mew.png" alt="Carta Mew" width="100">
+                <h3>Carta Mew</h3>
+                <p>Precio: $550</p>
+                <button onclick="agregarAlCarrito(13)">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 14 -->
+            <div class="producto" id="producto-14">
+                <img src="lugia.png" alt="Carta Lugia" width="100">
+                <h3>Carta Lugia</h3>
+                <p>Precio: $580</p>
+                <button onclick="agregarAlCarrito(14)">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 15 -->
+            <div class="producto" id="producto-15">
+                <img src="ho-oh.png" alt="Carta Ho-Oh" width="100">
+                <h3>Carta Ho-Oh</h3>
+                <p>Precio: $570</p>
+                <button onclick="agregarAlCarrito(15)">Agregar al carrito</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 D. Master-Card - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="carrito.js"></script>
+    <script src="productos.js"></script>
+
+</body>
+</html>
